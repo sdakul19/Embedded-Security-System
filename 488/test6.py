@@ -52,7 +52,7 @@ def main():
 
                         timestamp = time.strftime("%Y%m%d-%H%M%S")
                         filename = f"approaching_face_{timestamp}.jpg"
-                        cv2.imwrite(filename, frame)
+                        cv2.imwrite('/Users/nabeehdaouk/source/repos/GitHub/Embedded-Security-System/488/suspects/'+ filename, frame)
                         time.sleep(.1)
                 prev_face_size = current_face_size
             else:
