@@ -68,7 +68,6 @@ def process_frame(frame, face_cascade, prev_frame, prev_face_size, sensitivity_t
     if len(faces) > 0:
         for (x, y, w, h) in faces:
             current_face_size = w * h
-            print(current_face_size)  # This prints the size of each detected face
 
             # Draw a blue rectangle around every detected face
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
