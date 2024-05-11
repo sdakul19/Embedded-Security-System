@@ -82,7 +82,7 @@ def process_frame(frame, face_cascade, prev_frame, prev_face_size, sensitivity_t
 
                     timestamp = time.strftime("%Y%m%d-%H%M%S")
                     filename = f"approaching_face_{timestamp}.jpg"
-                    cv2.imwrite('/Users/nabeehdaouk/source/repos/GitHub/Embedded-Security-System/488/suspects/'+ filename, frame)
+                    cv2.imwrite('C:\Git\Embedded-Security-System\Images/'+ filename, frame)
                     time.sleep(.1)
 
             # Update previous face size only if the current face is the largest detected face
